@@ -1,16 +1,3 @@
-/*
- * Задача 1.
- *
- * const arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
- *
- * В массиве берется произвольный элемент и перемещается на произвольную позицию.
- * Нужна функция move(array, from, to), которая это осуществляет.
- * 
- * Пример:
- * 
- * move(arr, 1, 3)  // ['B', 'C', 'D', 'A', 'E', 'F', 'G', 'H'];
- */
-
 function move(array, from, to) {
     if (from === to) {
         return array;
@@ -38,8 +25,8 @@ function move(array, from, to) {
  *  - либо результат вызова move(arr, 1, 3): ['B', 'C', 'A', 'D', 'E', 'F', 'G', 'H']
  */
 const testDataSet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
-console.log(move(testDataSet, 1, 3));    // [ 'B', 'C', 'A', 'D', 'E', 'F', 'G', 'H' ]
-console.log(move(testDataSet, 5, 1));    // [ 'E', 'A', 'B', 'C', 'D', 'F', 'G', 'H' ]
-// console.log(move(testDataSet, 0, 3));    // Error: Array should starts at 1
-// console.log(move(testDataSet, 1, 100));  // Error: Position number is out of range
+console.log(move(testDataSet, 1, 3)); // [ 'B', 'C', 'A', 'D', 'E', 'F', 'G', 'H' ]
+console.log(move(testDataSet, 5, 1)); // [ 'E', 'A', 'B', 'C', 'D', 'F', 'G', 'H' ]
+// console.log(move(testDataSet, 0, 3)); // Error: Array should starts at 1
+// console.log(move(testDataSet, 1, 100)); // Error: Position number is out of range
 
