@@ -11,7 +11,7 @@ const Fraction = function (x, y) {
             const dividers = [];
 
             for (let index = number; index > 0; index--) {
-                if (number % index === 0) {
+                if (0 === (number % index)) {
                     dividers.push(index);
                 }
             }
@@ -36,7 +36,9 @@ const Fraction = function (x, y) {
                 }
             }
 
-            return greatestCommonDivisor !== 0 ? greatestCommonDivisor : 1;
+            return 0 !== greatestCommonDivisor
+                ? greatestCommonDivisor
+                : 1;
         },
 
         /**
