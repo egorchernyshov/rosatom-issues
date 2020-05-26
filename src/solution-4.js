@@ -12,19 +12,21 @@ function karatsubaMultiplication(A, B) {
     }
 
     /**
+     * @private
+     *
      * @param {number} number
      *
      * @returns {string}
      */
-    this.toSting = function (number) {
+    this._toSting = function (number) {
         const str = String(number);
         return 0 !== (str.length % 2)
             ? '0' + str
             : str;
     }
 
-    let AString = this.toSting(A);
-    let BString = this.toSting(B);
+    let AString = this._toSting(A);
+    let BString = this._toSting(B);
 
     const n = Math.min(AString.length, BString.length);
     const half = Math.round(n / 2);
