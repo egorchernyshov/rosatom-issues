@@ -1,9 +1,15 @@
+/**
+ * @param {number} x
+ * @param {number} y
+ *
+ * @constructor
+ */
 const Fraction = function (x, y) {
     this.math = {
         /**
          * @private
          *
-         * @param {int} number
+         * @param {number} number
          *
          * @returns {array}
          */
@@ -20,10 +26,10 @@ const Fraction = function (x, y) {
         },
 
         /**
-         * @param {int} x
-         * @param {int} y
+         * @param {number} x
+         * @param {number} y
          *
-         * @returns {int}
+         * @returns {number}
          */
         greatestCommonDivisor: function (x, y) {
             const xDividers = this._dividers(x);
@@ -42,8 +48,8 @@ const Fraction = function (x, y) {
         },
 
         /**
-         * @param {int} x
-         * @param {int} y
+         * @param {number} x
+         * @param {number} y
          */
         leastCommonMultiple: function (x, y) {
             return (x * y) / this.greatestCommonDivisor(x, y);

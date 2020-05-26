@@ -1,8 +1,21 @@
+/**
+ * @see https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%9A%D0%B0%D1%80%D0%B0%D1%86%D1%83%D0%B1%D1%8B
+ *
+ * @param {number} A
+ * @param {number} B
+ *
+ * @returns {number}
+ */
 function karatsubaMultiplication(A, B) {
     if (A < 10 || B < 10) {
         return A * B;
     }
 
+    /**
+     * @param {number} number
+     *
+     * @returns {string}
+     */
     this.toSting = function (number) {
         const str = String(number);
         return 0 !== (str.length % 2)
