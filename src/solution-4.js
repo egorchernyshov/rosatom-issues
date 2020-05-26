@@ -14,8 +14,8 @@ function karatsubaMultiplication(A, B) {
     let BString = this.toSting(B);
 
     const n = Math.min(AString.length, BString.length);
-
     const half = Math.round(n / 2);
+    const zeros = '0'.repeat(half);
 
     const AArray = AString.split('');
     const BArray = BString.split('');
@@ -25,7 +25,6 @@ function karatsubaMultiplication(A, B) {
 
     const BLeft = Number(BArray.slice(0, half).join(''));
     const BRight = Number(BArray.slice(half).join(''));
-    const zeros = '0'.repeat(half);
 
     const ALeftBLeft = karatsubaMultiplication(ALeft, BLeft);
     const ARightBRight = karatsubaMultiplication(ARight, BRight);
